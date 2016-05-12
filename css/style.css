@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+body {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/f/fa/Playa_del_Rinc%C3%B3n_de_la_Victoria.jpg) no-repeat center center fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+header{
+    position: fixed;
+    height: 20%;
+    background-image: url(https://i.ytimg.com/vi/NruZ5vzRhQ4/maxresdefault.jpg);
+    width: 100%;
+    border-bottom: black 3px;
+}
+
+section{
+    width: 960px;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+#wallpaper{
+    width: 100%;
+}
+
+nav{
+    position: absolute;
+    bottom: 0;
+    padding: 20px 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom: black 3px;
+}
+
+li:hover{
+    background: white url(https://i.ytimg.com/vi/NruZ5vzRhQ4/maxresdefault.jpg);
+}
+
+ul{
+    position: relative;
+    text-align: center;
+}
+
+li{
+    padding: 20px 10px;
+    width: 50px;
+    display: inline;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+form{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+section{
+    position: relative;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    width: 80%;
+    height: 30%;
+    margin: 0 auto;
+    background: white;
+    padding: 10px;
+}
+
+#search-box{
+    border: 0;
+    background-color:transparent;
+}
+
+#button{
+    border: 0;
+    background-color:transparent;
+}
