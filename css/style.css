@@ -63,11 +63,14 @@ form{
 }
 
 section{
+    width: 80%;
+    margin: 0 auto;
+}
+
+section p{
+    background: white;
     border: 3px solid #000000;
     border-radius: 5px;
-    width: 80%;
-    text-align: center;
-    background: white;
     padding: 10px;
 }
 
@@ -82,7 +85,7 @@ section{
 }
 
 #first-section{
-    margin-top: 200px;
+    margin-top: 140px;
 }
 
 /* RIBBON */
@@ -130,6 +133,7 @@ section{
 .ribbon-z-index{
     position: relative; z-index: 1;
 }
+
 
 /* END RIBBON */
 
