@@ -94,6 +94,9 @@ section p{
     margin-top: 180px;
 }
 
+#first-section div img {
+  display: inline-block;
+}
 /* RIBBON */
 
 .ribbon{
