@@ -18,6 +18,7 @@ header{
     border-bottom: black solid 3px;
     height: 20%;
     width: 100%;
+    padding-bottom: 20px;
     top: 0;
 }
 
@@ -44,11 +45,11 @@ ul{
 }
 
 li{
-    padding: 20px 10px;
+    padding: 21px 10px;
     width: 50px;
     display: inline;
     list-style-type: none;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 form{
@@ -62,6 +63,10 @@ form{
     padding: 0 5px;
 }
 
+#search-bar form input {
+  border: 0;
+}
+
 section{
     width: 960px;
     margin: 0 auto;
@@ -72,7 +77,7 @@ section p{
     border: 3px solid #000000;
     border-radius: 5px;
     padding: 10px;
-	
+    margin: 10px;
 }
 
 #search-box{
@@ -86,7 +91,7 @@ section p{
 }
 
 #first-section{
-    margin-top: 220px;
+    margin-top: 180px;
 }
 
 /* RIBBON */
@@ -131,10 +136,13 @@ section p{
     border-width: 1em 1em 0 0;
 }
 
-.ribbon-z-index{
-    position: relative; z-index: 1;
+.ribbon-folds {
+    font-family: 'Lobster';
 }
 
+.ribbon-z-index{
+    position: relative;
+    z-index: 1;
+}
 
 /* END RIBBON */
-
