@@ -100,7 +100,7 @@ section p{
     margin-top: 180px;
 }
 
-#first-section div img {
+#first-section .slider img {
   display: inline-block;
   width: 300px;
   background-color: white;
