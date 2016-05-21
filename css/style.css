@@ -35,6 +35,10 @@ nav{
     /*border-bottom: black solid 3px;*/
 }
 
+a{
+  text-decoration: none;
+}
+
 li:hover{
     background: white url(https://i.ytimg.com/vi/NruZ5vzRhQ4/maxresdefault.jpg);
 }
@@ -67,12 +71,7 @@ form{
   border: 0;
 }
 
-section{
-    width: 960px;
-    margin: 0 auto;
-}
-
-section p{
+#container p{
     background: white;
     border: 3px solid #000000;
     border-radius: 5px;
@@ -96,16 +95,41 @@ section p{
     background-color:transparent;
 }
 
-#first-section{
+#container{
     margin-top: 180px;
+    width: 960px;
+    margin: 0 auto;
 }
 
-#first-section .slider img {
+#container .slider img {
   display: inline-block;
   width: 300px;
   background-color: white;
   margin: 5px;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 959px) {
+  #container{
+    width:100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  p {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #container {
+    width: 320px;
+  }
+}
+
+/* END MEDIA QUERIES */
+
 /* RIBBON */
 
   .ribbon{
