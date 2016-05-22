@@ -13,19 +13,20 @@ body {
 }
 
 header{
-    position: fixed;
     background-image: url(https://i.ytimg.com/vi/NruZ5vzRhQ4/maxresdefault.jpg);
     border-bottom: black solid 3px;
     height: 20%;
     width: 100%;
-    padding-bottom: 20px;
+    padding-top: 20px;
     top: 0;
+    margin-bottom: 20px;
 }
 
 nav{
-    position: absolute;
+    position: relative;
     bottom: 0;
     padding: 20px 0;
+    margin-top: 50px;
     width: 100%;
     background: rgba(0, 0, 0, 0.2);
     /*border-bottom: black solid 3px;*/
@@ -41,11 +42,11 @@ ul{
 }
 
 li{
-    padding: 21px 10px;
+    padding: 20px 10px;
     width: 50px;
     display: inline;
     list-style-type: none;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 li:hover{
@@ -79,18 +80,12 @@ form{
     width: 100%;
 }
 
-#search-box{
-    border: 0;
-    background-color:transparent;
-}
-
 #button{
     border: 0;
     background-color:transparent;
 }
 
 #container{
-    margin-top: 180px;
     width: 960px;
     margin: 0 auto;
 }
@@ -137,6 +132,9 @@ form{
 @media screen and (max-width: 320px) {
   #container {
     width: 320px;
+  }
+  li {
+    display: block;
   }
 }
 
