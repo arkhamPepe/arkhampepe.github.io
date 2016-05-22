@@ -22,10 +22,6 @@ header{
     top: 0;
 }
 
-#wallpaper{
-    width: 100%;
-}
-
 nav{
     position: absolute;
     bottom: 0;
@@ -37,10 +33,6 @@ nav{
 
 a{
   text-decoration: none;
-}
-
-li:hover{
-    background: white url(https://i.ytimg.com/vi/NruZ5vzRhQ4/maxresdefault.jpg);
 }
 
 ul{
@@ -56,6 +48,10 @@ li{
     font-size: 14px;
 }
 
+li:hover{
+    background: white url(https://i.ytimg.com/vi/NruZ5vzRhQ4/maxresdefault.jpg);
+}
+
 form{
     position: absolute;
     top: 50%;
@@ -67,22 +63,20 @@ form{
     padding: 0 5px;
 }
 
-#search-bar form input {
-  border: 0;
-}
-
-#container p{
-    background: white;
-    border: 3px solid #000000;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px 0;
-}
+/* CLASSES */
 
 .slider {
   padding: 0 auto;
   background-color: white;
   border: 3px black solid;
+}
+
+/* END CLASSES */
+
+/* ID's */
+
+#wallpaper{
+    width: 100%;
 }
 
 #search-box{
@@ -101,12 +95,30 @@ form{
     margin: 0 auto;
 }
 
+/* END ID's */
+
+/* ID SUB-TAGS */
+
 #container .slider img {
   display: inline-block;
   width: 300px;
   background-color: white;
   margin: 5px;
 }
+
+#search-bar form input {
+  border: 0;
+}
+
+#container p{
+    background: white;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* END ID SUB-TAGS */
 
 /* MEDIA QUERIES */
 
