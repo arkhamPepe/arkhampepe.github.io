@@ -32,6 +32,26 @@ nav{
     /*border-bottom: black solid 3px;*/
 }
 
+form {
+  background: white;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+form label {
+  display: block;
+}
+
+.input {
+  float: left;
+
+}
+
+form h2 {
+  text-align: center;
+}
+
 a{
   text-decoration: none;
 }
@@ -53,6 +73,7 @@ li:hover{
     background: white url(https://i.ytimg.com/vi/NruZ5vzRhQ4/maxresdefault.jpg);
 }
 
+/*
 form{
     position: absolute;
     top: 50%;
@@ -76,6 +97,17 @@ form{
 /* END CLASSES */
 
 /* ID's */
+
+#search-bar form{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  padding: 0 5px;
+}
 
 #wallpaper{
     width: 100%;
