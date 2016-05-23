@@ -43,11 +43,6 @@ form label {
   display: block;
 }
 
-.input {
-  float: left;
-
-}
-
 form h2 {
   text-align: center;
 }
@@ -87,6 +82,10 @@ form{
 
 /* CLASSES */
 
+.clear-me {
+  clear: right;
+}
+
 .slider {
   padding: 0 auto;
   background-color: white;
@@ -94,6 +93,13 @@ form{
   border-radius: 5px;
 }
 
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
 /* END CLASSES */
 
 /* ID's */
@@ -123,6 +129,11 @@ form{
     margin: 0 auto;
 }
 
+#submit {
+    right: 10px;
+    bottom: 0;
+    clear:both;
+}
 /* END ID's */
 
 /* ID SUB-TAGS */
