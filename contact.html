@@ -32,18 +32,7 @@
             </li>
         </ul>
         <div id="search-bar">
-            <!--<script type="text/javascript">
-
-                function link() {
-                    var link_s = document.getElementById('link_id').value;
-                    document.getElementById('link_str').innerHTML = link_s.link()
-                }
-
-            </script>
-
-
-            <input type='text' id='link_id'>
-            <input type='button' id='link_str' value='Search' onClick='link()'>-->
+            
             <form>
                 <input type="text" name="search">
                     <input type="submit" name="submit" value="Search" id="button"/>
@@ -57,24 +46,25 @@
     <form method="post">
       <h2>Contact us!</h2>
 
-      <div class="input">
-        <label>First name:</label>
-        <input type="text" />
+      <div class="left">
+        <label for="firstname">First name:</label>
+        <input type="text" name="firstname" id="firstname"/>
       </div>
 
-      <div class="input">
-        <label>Last name:</label>
-        <input type="text" />
-      </div>
-    <br />
-      <div class="input">
-        <label>E-mail:</label>
-        <input type="text" />
+      <div class="right">
+        <label for="lastname">Last name:</label>
+        <input type="text" name="lastname" id="lastname"/>
       </div>
 
-      <div class="input" >
-        <input type="submit" />
+      <div class="left clear-me ">
+        <label for="email">E-mail:</label>
+        <input type="text" name="email" id="email"/>
       </div>
+
+      <div>
+        <input type="submit" id="submit"/>
+      </div>
+
     </form>
 </div>
 
