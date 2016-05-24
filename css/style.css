@@ -35,7 +35,7 @@ nav{
 form {
   background: white;
   padding: 10px;
-  border: 2px solid #000;
+  border: 3px solid #000;
   border-radius: 5px;
 }
 
@@ -51,7 +51,7 @@ a{
   text-decoration: none;
 }
 
-ul{
+nav ul{
     position: relative;
     text-align: center;
 }
@@ -69,31 +69,46 @@ nav ul li:hover{
 }
 
 /* CLASSES */
+.dark {
+  position: absolute;
+  bottom: -2px;
+  height: 40px;
+  width: 100%;
+}
+
+.dark h3 {
+  position: relative;
+  margin: 0 auto;
+  color: white;
+  top: 10px;
+  left: 10px;
+}
+
 .inlined {
   display: inline;
 }
-
 
 .clear-me {
   clear: both;
 }
 
 .banner {
-  padding: 0 auto;
-  background-color: white;
-  border: 2px black solid;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 3px black solid;
   border-radius: 5px;
-  height: 190px;
+  height: 202.47px;
+  margin-bottom: -108px;
 }
 
 .unslider-wrap{height:200px}
 
 
 .banner ul li img {
-  display: inline-block;
-  width: 300px;
+  float: left;
+  width: 318px;
   background-color: white;
-  margin: 5px;
+  z-index: -1;
 }
 
 .left {
@@ -149,7 +164,7 @@ nav ul li:hover{
 
 #container p{
     background: white;
-    border: 2px solid #000000;
+    border: 3px solid #000000;
     border-radius: 5px;
     padding: 10px;
     margin: 10px 0;
