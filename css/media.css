@@ -1,0 +1,26 @@
+@media screen and (max-width: 959px) { /* Mindre än container */
+  #container{
+    width:100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  p {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  #form_container{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #container {
+    width: 320px;
+  }
+  li {
+    display: block;
+  }
+}

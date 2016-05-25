@@ -1,0 +1,34 @@
+#telephone { /* Styles telephone number in header */
+  position: relative;
+  bottom: 100px
+}
+
+#wallpaper{ /* Styles the wallpaper */
+    width: 100%;
+}
+
+#button{ /* Styles submit button in contact form */
+    border: 0;
+    background-color:transparent;
+}
+
+#container{ /* Styles the main field of the page */
+    width: 960px;
+    margin: 0 auto;
+}
+
+#submit { /* Styles submit button in search field in header */
+    right: 10px;
+    bottom: 0;
+    clear:both;
+}
+
+#firstname {
+  width: 300px;
+}
+
+#form_container {
+  width: 600px;
+  margin: 0 auto;
+  overflow:auto;
+}

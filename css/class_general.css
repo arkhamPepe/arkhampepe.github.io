@@ -1,0 +1,25 @@
+.inlined {
+  display: inline;
+}
+
+.clear-me {
+  clear: both;
+}
+
+img.article {
+  width: 300px;
+  margin-right: 10px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.pricetag {
+  position: relative;
+  bottom: 100px;
+}

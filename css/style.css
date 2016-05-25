@@ -32,6 +32,14 @@ nav{
     /*border-bottom: black solid 3px;*/
 }
 
+article{
+    background: white;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
 form {
   background: white;
   padding: 10px;
@@ -69,107 +77,6 @@ nav ul li:hover{
     background: white url(https://i.ytimg.com/vi/NruZ5vzRhQ4/maxresdefault.jpg);
 }
 
-/* CLASSES */
-
-.dark {
-  position: absolute;
-  bottom: -2px;
-  height: 40px;
-  width: 100%;
-}
-
-.dark h3 {
-  position: relative;
-  margin: 0 auto;
-  color: white;
-  top: 10px;
-  left: 10px;
-}
-
-.inlined {
-  display: inline;
-}
-
-.clear-me {
-  clear: both;
-}
-
-.banner {
-  padding: 0;
-  background-color: rgba(255, 255, 255, 0.5);
-  border: 3px black solid;
-  border-radius: 5px;
-  height: 202.47px;
-  margin-bottom: -108px;
-}
-
-.unslider-wrap{height:200px}
-
-.banner ul li img {
-  float: left;
-  width: 318px;
-  background-color: white;
-  z-index: -1; /*Puts img tag behind close elements */
-}
-
-img.article {
-  width: 300px;
-  margin-right: 10px;
-}
-
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-
-.pricetag {
-  position: relative;
-  bottom: 100px;
-}
-
-/* END CLASSES */
-
-/* ID's */
-
-#telephone { /* Styles telephone number in header */
-  position: relative;
-  bottom: 100px
-}
-
-#wallpaper{ /* Styles the wallpaper */
-    width: 100%;
-}
-
-#button{ /* Styles submit button in contact form */
-    border: 0;
-    background-color:transparent;
-}
-
-#container{ /* Styles the main field of the page */
-    width: 960px;
-    margin: 0 auto;
-}
-
-#submit { /* Styles submit button in search field in header */
-    right: 10px;
-    bottom: 0;
-    clear:both;
-}
-
-#firstname {
-  width: 300px;
-}
-
-#form_container {
-  width: 600px;
-  margin: 0 auto;
-  overflow:auto;
-}
-/* END ID's */
-
 /* ID SUB-TAGS */
 
 #search-bar form{
@@ -187,90 +94,4 @@ img.article {
   border: 0;
 }
 
-article{
-    background: white;
-    border: 3px solid #000000;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px 0;
-}
-
 /* END ID SUB-TAGS */
-
-/* MEDIA QUERIES */
-
-@media screen and (max-width: 959px) {
-  #container{
-    width:100%;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  p {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  #container {
-    width: 320px;
-  }
-  li {
-    display: block;
-  }
-}
-
-/* END MEDIA QUERIES */
-
-/* RIBBON */
-
-  .ribbon{
-      font-size: 15px !important;
-      width: 20em;
-      position: relative;
-      background: linear-gradient(0deg, #069 0%, #09c 99%);
-      color: #fff;
-      text-align: center;
-      padding: 1em 0em;
-      margin: 1em auto;
-  }
-
-  .ribbon:before, .ribbon:after {
-      content: "";
-      position: absolute;
-      display: block;
-      bottom: -1em;
-      border: 1.5em solid #069;
-      z-index: -1;
-  }
-
-  .ribbon:before{
-      left: -2em;
-      border-left-color: transparent;
-  }
-
-  .ribbon:after{
-      right: -2em;
-      border-right-color: transparent;
-  }
-
-  .ribbon-folds:before{
-      left: 0;
-      border-width: 1em 0 0 1em;
-  }
-
-  .ribbon-folds:after{
-      right: 0;
-      border-width: 1em 1em 0 0;
-  }
-
-  .ribbon-folds {
-      font-size: 20px;
-  }
-
-  .ribbon-z-index{
-      position: relative;
-      z-index: 1;
-  }
-
-/* END RIBBON */
