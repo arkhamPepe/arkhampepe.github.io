@@ -15,6 +15,14 @@ img.article {
   float: left;
 }
 
+.bottom {
+  position: relative;
+  top: 157px; /* (footer_heigt) - (.bootom_height + footer_border) */
+  width: inherit; /* Gets same width as footer */
+  height: 40px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .right {
   float: right;
 }

@@ -7,6 +7,11 @@
     width: 100%;
 }
 
+#wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
 #button{ /* Styles submit button in search field in header */
     border: 0;
     background-color:transparent;
