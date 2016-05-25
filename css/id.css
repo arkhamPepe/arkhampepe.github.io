@@ -7,7 +7,7 @@
     width: 100%;
 }
 
-#button{ /* Styles submit button in contact form */
+#button{ /* Styles submit button in search field in header */
     border: 0;
     background-color:transparent;
 }
@@ -17,14 +17,18 @@
     margin: 0 auto;
 }
 
-#submit { /* Styles submit button in search field in header */
-    right: 10px;
+#submit { /* Styles submit button in contact form */
+
     bottom: 0;
     clear:both;
 }
 
 #firstname {
-  width: 300px;
+  width: 280px;
+}
+
+#lastname {
+  width: 280px;
 }
 
 #form_container {
