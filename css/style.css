@@ -37,6 +37,7 @@ form {
   padding: 10px;
   border: 3px solid #000;
   border-radius: 5px;
+  overflow:auto;
 }
 
 form label {
@@ -69,6 +70,7 @@ nav ul li:hover{
 }
 
 /* CLASSES */
+
 .dark {
   position: absolute;
   bottom: -2px;
@@ -107,7 +109,7 @@ nav ul li:hover{
   float: left;
   width: 318px;
   background-color: white;
-  z-index: -1;
+  z-index: -1; /*Puts img tag behind close elements */
 }
 
 img.article {
@@ -123,29 +125,48 @@ img.article {
   float: right;
 }
 
+.pricetag {
+  position: relative;
+  bottom: 100px;
+}
+
 /* END CLASSES */
 
 /* ID's */
 
+#telephone { /* Styles telephone number in header */
+  position: relative;
+  bottom: 100px
+}
 
-#wallpaper{
+#wallpaper{ /* Styles the wallpaper */
     width: 100%;
 }
 
-#button{
+#button{ /* Styles submit button in contact form */
     border: 0;
     background-color:transparent;
 }
 
-#container{
+#container{ /* Styles the main field of the page */
     width: 960px;
     margin: 0 auto;
 }
 
-#submit {
+#submit { /* Styles submit button in search field in header */
     right: 10px;
     bottom: 0;
     clear:both;
+}
+
+#firstname {
+  width: 300px;
+}
+
+#form_container {
+  width: 600px;
+  margin: 0 auto;
+  overflow:auto;
 }
 /* END ID's */
 
