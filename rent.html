@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Title</title>
-  
+
   <link type="text/css" rel="stylesheet" href="css/style.css" />
   <link type="text/css" rel="stylesheet" href="css/media.css" />
   <link type="text/css" rel="stylesheet" href="css/carousel.css" />
@@ -47,19 +47,143 @@
   </header>
 
   <div id="container">
-    <article>
-      <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit,
-          vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus,
-          ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique,
-          tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris
-          sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum
-          in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate
-          eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula,
-          a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at
-          ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan.
-      </p>
-    </article>
+    <form>
+      <section>
+        <br/> <!-- inline with other input tags -->
+        <input type="text" name="apartment" id="apartment_form"/> <!-- Differentiate from id apartment -->
+      </section>
+
+      <section>
+        <label>Arrival</label>
+        <input type="text" class="datepicker"/> <!-- Class instead of id for repetition -->
+        <table class="calendar">
+          <tr>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+            <th>Sun</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+          </tr>
+          <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+          </tr>
+          <tr>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+            <td class="gray">1</td>
+            <td class="gray">2</td>
+            <td class="gray">3</td>
+            <td class="gray">4</td>
+          </tr>
+        </table>
+      </section>
+
+      <section>
+        <label>Departure</label>
+        <input type="text" class="datepicker"/>
+        <table class="calendar">
+          <tr>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+            <th>Sun</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+          </tr>
+          <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+          </tr>
+          <tr>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+            <td class="gray">1</td>
+            <td class="gray">2</td>
+            <td class="gray">3</td>
+            <td class="gray">4</td>
+          </tr>
+        </table>
+      </section>
+
+      <section>
+        <label for="travelers">How many?</label>
+        <input type="" name="travelers" id="travelers"/>
+      </section>
+      <section>
+        <br/>
+        <input type="submit" value="Rent"/>
+      </section>
+    </form>
   </div>
 
   <script>

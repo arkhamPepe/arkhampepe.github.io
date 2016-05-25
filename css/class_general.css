@@ -23,3 +23,12 @@ img.article {
   position: relative;
   bottom: 100px;
 }
+
+.calendar {
+  border: 2px black solid;
+}
+
+.gray {
+  background-color: #333333;
+  color: #888888;
+}
