@@ -10,17 +10,37 @@
   }
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 599px) { /* Mindre än #form_container */
   #form_container{
     width: 100%;
+  }
+  #form_container form .left, #form_container form .right {
+    float: none;
+    width: 100%;
+    text-align:center;
+  }
+  #submit { /* Styles submit button in contact form */
+      bottom: 0;
+      clear: none;
   }
 }
 
 @media screen and (max-width: 320px) {
   #container {
-    width: 320px;
+    width: 320px; /* Minimum width */
   }
-  li {
+  nav ul li {
+    width: 100%;
+  }
+  #search-bar form{
+    position: static;
     display: block;
+    float: left;
+    width: 100%;
+    top: 10px;
+    transform: none;
+  }
+  #firstname, #lastname, #email, #message {
+    width: 100%
   }
 }

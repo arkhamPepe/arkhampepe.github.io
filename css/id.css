@@ -23,23 +23,21 @@
     padding-bottom: 210px; /* Makes footer be at bottom */
 }
 
-#submit { /* Styles submit button in contact form */
+#form_container {
+    width: 600px;
+    margin: 0 auto;
+    overflow:auto;
+    padding-bottom: 250px; /* Makes footer be at bottom */
+}
 
+#submit { /* Styles submit button in contact form */
+    width: 50px;
     bottom: 0;
     clear:both;
+    float: left;
 }
 
-#firstname {
+/* Inputs in contact form */
+#firstname, #lastname, #email {
   width: 280px;
-}
-
-#lastname {
-  width: 280px;
-}
-
-#form_container {
-  width: 600px;
-  margin: 0 auto;
-  overflow:auto;
-  padding-bottom: 250px; /* Makes footer be at bottom */
 }
