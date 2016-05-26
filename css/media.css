@@ -6,7 +6,9 @@
   }
 
   #container form {
+
   }
+  
   #container form section { /* Align vertically */
     display: block;
     float: none;
@@ -29,7 +31,7 @@
   }
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 735px) {
   nav ul{ /* search-bar is now positioned underneath nav items */
       position: relative;
       text-align: center;
@@ -68,7 +70,7 @@
 }
 
 @media screen and (max-width: 640px) {
-  p {
+  article {
     display: block;
   }
   body {
