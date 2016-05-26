@@ -8,13 +8,19 @@
   #container form {
 
   }
-  
+
   #container form section { /* Align vertically */
     display: block;
     float: none;
     text-align:center;
   }
 }
+
+@media screen and (max-width: 1200px) { /* Deals with wallpaper duplicating */
+  body {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/f/fa/Playa_del_Rinc%C3%B3n_de_la_Victoria.jpg) no-repeat center center fixed;
+    }
+  }
 
 @media screen and (max-width: 920px) {
   nav ul{ /* Simplest solution to avoid search-bar showing above nav list items */

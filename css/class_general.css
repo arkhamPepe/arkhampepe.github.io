@@ -6,9 +6,9 @@
   clear: both;
 }
 
-img.article {
+.article {
   width: 300px;
-  margin-right: 10px;
+  margin-bottom: -20px;
 }
 
 .left {
@@ -17,7 +17,7 @@ img.article {
 
 .bottom {
   position: relative;
-  top: 157px; /* (footer_heigt) - (.bootom_height + footer_border) */
+  top: 156px; /* (footer_heigt) - (.bottom_height + footer_border) */
   width: inherit; /* Gets same width as footer */
   height: 40px;
   background: rgba(0, 0, 0, 0.5);
@@ -25,11 +25,6 @@ img.article {
 
 .right {
   float: right;
-}
-
-.pricetag { /* Positions pricetag inside img */
-  position: relative;
-  bottom: 10px;
 }
 
 .calendar {
@@ -40,3 +35,27 @@ img.article {
   background-color: #333333;
   color: #888888;
 }
+
+.tint {
+  background: rgba(0, 0, 0, 0.5);
+  height: 15px;
+  padding-bottom: 15px;
+  z-index: 2;
+}
+
+/* STAR RATING */
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+/* END STAR RATING */

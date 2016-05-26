@@ -5,7 +5,7 @@
 }
 
 body {
-    background: url(https://upload.wikimedia.org/wikipedia/commons/f/fa/Playa_del_Rinc%C3%B3n_de_la_Victoria.jpg) no-repeat center center fixed;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/f/fa/Playa_del_Rinc%C3%B3n_de_la_Victoria.jpg); /*Add: "no-repeat center center fixed" to make picture fixed*/
     -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -23,6 +23,11 @@ header{
     margin-bottom: 20px;
 }
 
+figure {
+  width: 300px;
+  margin-right: 20px;
+}
+
 nav{
     position: relative;
     bottom: 0;
@@ -30,7 +35,6 @@ nav{
     margin-top: 50px;
     width: 100%;
     background: rgba(0, 0, 0, 0.2);
-    /*border-bottom: black solid 3px;*/
 }
 
 article{
@@ -39,6 +43,7 @@ article{
     border-radius: 5px;
     padding: 10px;
     margin: 10px 0;
+    overflow: auto;
 }
 
 form {
@@ -127,4 +132,7 @@ td:hover {
   margin-right: 10px;
 }
 
+#payment h2 {
+  margin: 0 auto;
+}
 /* END ID SUB-TAGS */

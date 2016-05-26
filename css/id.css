@@ -19,9 +19,13 @@
 }
 
 #container{ /* Styles the main field of the page */
-    width: 960px;
-    margin: 0 auto;
+
     padding-bottom: 210px; /* Makes footer be at bottom */
+}
+
+#container, #payment {
+  width: 960px;
+  margin: 0 auto;
 }
 
 #form_container {
@@ -32,14 +36,13 @@
 }
 
 #submit { /* Styles submit button in contact form */
-
     bottom: 0;
     clear:both;
     float: left;
 }
 
 #rent, #submit {
-  width: 50px;
+  width: 60px;
 }
 
 /* Inputs in contact form */
@@ -49,4 +52,8 @@
 
 #travelers { /* Was too short */
   width:150px
+}
+
+#payment { /* Payment form, should be displayed when #submit is clicked */
+  display: none;
 }

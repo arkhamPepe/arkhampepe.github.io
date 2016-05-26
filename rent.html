@@ -51,12 +51,12 @@
 
   <div id="container">
     <form>
-      <section>
+      <div class="input">
         <label for="apartment_form">Apartment</label>
         <input type="text" name="apartment" id="apartment_form"/> <!-- Differentiate from id apartment -->
-      </section>
+      </div>
 
-      <section>
+      <div class="input">
         <label for="datepicker1">Arrival</label>
         <input type="text" id="datepicker1"/> <!-- Class instead of id for repetition -->
         <!-- <table class="calendar">
@@ -115,31 +115,75 @@
             <td class="gray">4</td>
           </tr>
         </table> -->
-      </section>
+      </div>
 
-      <section>
+      <div class="input">
         <label for="datepicker2">Departure</label>
         <input type="text" id="datepicker2"/>
 
-      </section>
+      </div>
 
-      <section>
+      <div class="input">
         <label for="travelers">How many?</label>
         <input type="number" name="travelers" min="1" max="5" id="travelers"/>
-      </section>
-      <section>
+      </div>
+      <div class="input">
         <br/>
-        <input type="submit" value="Rent" id="rent"/>
-      </section>
+        <input type="button" name="answer" value="Continue" onclick="showDiv()" id="rent"/>
+      </div>
     </form>
   </div>
   <div id="payment">
+
     <form>
-      <label for=""></label>
+      <h2>Payment information</h2>
+      <div class="left">
+        <label for="firstname_pay">First name:*</label>
+        <input type="text" name="firstname" id="firstname_pay"/>
+      </div>
+
+      <div class="left">
+        <label for="lastname_pay">Last name:*</label>
+        <input type="text" name="lastname" id="lastname_pay"/>
+      </div>
+
+      <div class="left clear-me">
+        <label for="credit">Credit card number:*</label>
+        <input type="text" name="credit_number" id="credit"/>
+      </div>
+
+      <div class="left">
+        <label for="cvv">CVV:*</label>
+        <input type="text" name="cvv" id="cvv"/>
+      </div>
+
+      <div class="left clear-me">
+        <label for="country">Country:</label>
+        <input type="text" name="country" id="country"/>
+      </div>
+
+      <div class="left">
+        <label for="adress">Adress:</label>
+        <input type="text" name="adress" id="adress"/>
+      </div>
+
+      <div class="left">
+        <label for="city">City:</label>
+        <input type="text" name="city" id="city"/>
+      </div>
+
+      <div class="left">
+        <label for="postal_code">Postal code:</label>
+        <input type="text" name="postal_code" id="postal_code"/>
+      </div>
+
+      <div>
+        <img width="50px" src="img/Check.png" alt="checkmark">
+      </div>
 
     </form>
   </div>
-
+<!--
   <footer>
     <div class="bottom">
       <section>
@@ -155,7 +199,7 @@
     </div>
   </footer>
 </div>
-
+-->
 <div id="javascript">
   <script src="javascript/jquery-1.10.2.js"></script>
   <script src="javascript/jquery-ui.js"></script>
@@ -185,7 +229,7 @@
 
   <script>
   function showDiv() {
-   document.getElementById('welcomeDiv').style.display = "block";
+   document.getElementById('payment').style.display = "block";
   }
   </script>
 
