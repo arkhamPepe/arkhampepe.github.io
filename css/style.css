@@ -62,10 +62,6 @@ form h2 {
   text-align: center;
 }
 
-section { /* for form elements in rent.html */
-  float: left;
-}
-
 a{
   text-decoration: none;
 }
