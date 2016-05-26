@@ -41,7 +41,7 @@
           </ul>
           <div id="search-bar">
               <form>
-                  <input type="text" name="search">
+                  <input type="text" name="search" id="search">
                       <input type="submit" name="submit" value="Search" id="button"/>
                   </input>
               </form>
@@ -52,12 +52,12 @@
   <div id="container">
     <form>
       <section>
-        <label>Apartment</label>
+        <label for="apartment_form">Apartment</label>
         <input type="text" name="apartment" id="apartment_form"/> <!-- Differentiate from id apartment -->
       </section>
 
       <section>
-        <label>Arrival</label>
+        <label for="datepicker1">Arrival</label>
         <input type="text" id="datepicker1"/> <!-- Class instead of id for repetition -->
         <!-- <table class="calendar">
           <tr>
@@ -118,7 +118,7 @@
       </section>
 
       <section>
-        <label>Departure</label>
+        <label for="datepicker2">Departure</label>
         <input type="text" id="datepicker2"/>
 
       </section>
@@ -168,6 +168,25 @@
   $(function() {
     $( "#datepicker2" ).datepicker();
   });
+  </script>
+
+  <script>
+  $(function() {
+    var availableTags = [
+      "Benalmadema Palace",
+      "Casares del Sol",
+      "Estepona Paradise"
+    ];
+    $( "#apartment_form" ).autocomplete({
+      source: availableTags
+    });
+  });
+  </script>
+
+  <script>
+  function showDiv() {
+   document.getElementById('welcomeDiv').style.display = "block";
+  }
   </script>
 
   <script>

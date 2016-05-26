@@ -1,17 +1,83 @@
 @media screen and (max-width: 959px) { /* Mindre än container */
-  #container{
-    width:100%;
+  #container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
   }
+
+  #container form {
+  }
+  #container form section { /* Align vertically */
+    display: block;
+    float: none;
+    text-align:center;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  nav ul{ /* Simplest solution to avoid search-bar showing above nav list items */
+      position: relative;
+      text-align: left;
+      margin-bottom: 10px;
+  }
+  #search, #button {
+    height: 30px;
+    font-size: 20px
+  }
+  #search-bar form {
+    padding: 3px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  nav ul{ /* search-bar is now positioned underneath nav items */
+      position: relative;
+      text-align: center;
+      margin-bottom: 10px;
+  }
+
+  #search-bar form {
+    margin: 0 10px;
+    position: static;
+    transform: none;
+    text-align: left;
+    width: auto; /* This, instead of 80%, made the search-bar be centered */
+    overflow: auto;
+  }
+
+  #search-bar { /* Used more in media queries */
+    margin: 0 auto;
+  }
+
+  #button{ /* Styles submit button in search field in header */
+    float: left;
+    width: 15%;
+    padding: 0 10px;
+
+  }
+
+  #search {
+    width: 85%;
+    float:left;
+  }
+
+  nav {
+    overflow: auto;
+  }
+
 }
 
 @media screen and (max-width: 640px) {
   p {
     display: block;
   }
+  body {
+    background-size: 100%
+  }
 }
 
 @media screen and (max-width: 599px) { /* Mindre än #form_container */
-  #form_container{
+  #form_container {
     width: 100%;
   }
   #form_container form .left, #form_container form .right {

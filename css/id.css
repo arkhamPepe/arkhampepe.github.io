@@ -13,8 +13,9 @@
 }
 
 #button{ /* Styles submit button in search field in header */
-    border: 0;
+    border: 1px black solid;
     background-color:transparent;
+    font-size: 14px;
 }
 
 #container{ /* Styles the main field of the page */

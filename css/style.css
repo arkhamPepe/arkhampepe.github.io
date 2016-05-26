@@ -108,7 +108,7 @@ td:hover {
 
 /* ID SUB-TAGS */
 
-#search-bar form{
+#search-bar form {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
