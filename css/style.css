@@ -123,4 +123,8 @@ td:hover {
   border: 0;
 }
 
+#container form section {
+  margin-right: 10px;
+}
+
 /* END ID SUB-TAGS */

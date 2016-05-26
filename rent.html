@@ -12,19 +12,8 @@
   <link type="text/css" rel="stylesheet" href="css/id.css" />
   <link type="text/css" rel="stylesheet" href="css/ribbon.css" />
 
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-  <script>
-  $(function() {
-    $( "#datepicker1" ).datepicker();
-  });
-  </script>
-  <script>
-  $(function() {
-    $( "#datepicker2" ).datepicker();
-  });
-  </script>
+  <link rel="stylesheet" href="css/javascript/jquery-ui.css">
+
   <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -136,12 +125,18 @@
 
       <section>
         <label for="travelers">How many?</label>
-        <input type="" name="travelers" id="travelers"/>
+        <input type="number" name="travelers" min="1" max="5" id="travelers"/>
       </section>
       <section>
         <br/>
-        <input type="submit" value="Rent"/>
+        <input type="submit" value="Rent" id="rent"/>
       </section>
+    </form>
+  </div>
+  <div id="payment">
+    <form>
+
+      
     </form>
   </div>
 
@@ -161,16 +156,31 @@
   </footer>
 </div>
 
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<div id="javascript">
+  <script src="javascript/jquery-1.10.2.js"></script>
+  <script src="javascript/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    $( "#datepicker1" ).datepicker();
+  });
+  </script>
+  <script> /* Ignorant about possibility of just a single of these I created a second one, because it works */
+  $(function() {
+    $( "#datepicker2" ).datepicker();
+  });
+  </script>
 
-    ga('create', 'UA-77818900-1', 'auto');
-    ga('send', 'pageview');
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-</script>
+      ga('create', 'UA-77818900-1', 'auto');
+      ga('send', 'pageview');
+
+  </script>
+</div>
 
 </body>
 </html>

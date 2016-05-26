@@ -27,9 +27,9 @@ img.article {
   float: right;
 }
 
-.pricetag {
+.pricetag { /* Positions pricetag inside img */
   position: relative;
-  bottom: 100px;
+  bottom: 10px;
 }
 
 .calendar {
