@@ -29,16 +29,20 @@
 }
 
 #form_container {
-    width: 600px;
-    margin: 0 auto;
-    overflow:auto;
-    padding-bottom: 250px; /* Makes footer be at bottom */
+  width: 600px;
+  margin: 0 auto;
+  overflow:auto;
+  padding-bottom: 250px; /* Makes footer be at bottom */
 }
 
 #submit { /* Styles submit button in contact form */
-    bottom: 0;
-    clear:both;
-    float: left;
+  bottom: 0;
+  clear:both;
+  float: left;
+}
+
+#message {
+  max-width: 570px; /* 280px * 2 + 10px */
 }
 
 #rent, #submit {

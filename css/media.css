@@ -79,9 +79,6 @@
   article {
     display: block;
   }
-  body {
-    background-size: 100%
-  }
 }
 
 @media screen and (max-width: 599px) { /* Mindre än #form_container */
