@@ -3,10 +3,6 @@
   bottom: 100px
 }
 
-#wallpaper{ /* Styles the wallpaper */
-    width: 100%;
-}
-
 #wrapper {
   min-height: 100%; /* At least wraps 100% of the screen height */
   position: relative;
@@ -19,7 +15,6 @@
 }
 
 #container{ /* Styles the main field of the page */
-
     padding-bottom: 210px; /* Makes footer be at bottom */
 }
 

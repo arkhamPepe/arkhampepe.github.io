@@ -24,12 +24,13 @@ header{
 }
 
 figure {
+  float: left;
   width: 300px;
   margin-right: 20px;
 }
 
 nav{
-    position: relative;
+    position: relative; /* Positions relative to where it would have been if static */
     bottom: 0;
     padding: 20px 0;
     margin-top: 50px;
@@ -54,7 +55,7 @@ form {
   overflow: auto;
 }
 
-form label {
+form label { /* label and input now count as one box */
   display: block;
 }
 
@@ -75,12 +76,12 @@ nav ul li{
     padding: 20px 10px;
     width: 50px;
     display: inline;
-    list-style-type: none;
+    list-style-type: none; /* Removes bullets */
     font-size: 20px;
 }
 
 nav ul li:hover{
-    background: white url(https://i.ytimg.com/vi/NruZ5vzRhQ4/maxresdefault.jpg);
+    background: rgba(0, 100, 255, 0.2);
 }
 
 footer {
@@ -97,9 +98,9 @@ footer {
 /* ID SUB-TAGS */
 
 #search-bar form {
-  position: absolute;
+  position: absolute; /* Positions the search-bar relative to its parent element */
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%); /*Centers vertically*/
   right: 10px;
   text-align: center;
   background-color: white;
@@ -118,4 +119,5 @@ footer {
 #payment h2 {
   margin: 0 auto;
 }
+
 /* END ID SUB-TAGS */
