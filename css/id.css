@@ -4,6 +4,7 @@
 }
 
 #wrapper {
+  width: 100%;
   min-height: 100%; /* At least wraps 100% of the screen height */
   position: relative;
 }
@@ -14,11 +15,7 @@
     font-size: 14px;
 }
 
-#container{ /* Styles the main field of the page */
-    padding-bottom: 210px; /* Makes footer be at bottom */
-}
-
-#container, #payment {
+#payment {
   width: 960px;
   margin: 0 auto;
 }
