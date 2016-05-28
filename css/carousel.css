@@ -25,7 +25,6 @@
 .unslider-wrap {height:200px}
 
 .banner img {
-  float: left;
   width: 318px;
   background-color: white;
   z-index: -1; /*Puts img tag behind close elements */
