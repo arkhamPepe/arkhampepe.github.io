@@ -1,40 +1,26 @@
 /* Using desktop first design */
 
 @media screen and (max-width: 959px) { /* Mindre än container */
-  html, body, header. .apartment-p, article {
+  header, footer, article {
     width: 100%;
   }
 
-  article{
+  /*#carousel *{ /* Don't know how else to deal with the javascript, too much work for one element */ /*
+    display: none;
+  }*/
+  article *{
       width: 90%;
       margin: 0 auto;
       overflow: none;
   }
 
-  header{
-
-      height: 20%;
-      width: ;
-      padding-top: 20px;
-      top: 0;
-      margin-bottom: 20px;
-  }
-  footer {
-    width: 100%;
-  	height: 200px;
-  	position: static;
-  	bottom: 0; /* This will make is stay at the bottom */
-  	left: 0;
-  }
-
   /* Rent form */
   main form {
-    width: 80%;
+    min-width: 80%;
     margin-left: auto;
     margin-right: auto;
-    overflow:auto;
+    overflow: auto;
   }
-
 
   main form>.left, main form>.right{
     width: 50%;
@@ -45,15 +31,25 @@
     width: 90%;
   }
 
-
+  nav{
+      /*position: relative;
+      bottom: 0;
+      padding-top: 0;*/
+      margin-top: 50px;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.2);
+  }
+  #search-bar form {
+    margin: 0 10px;
+    float: left;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 0;
+  }
 }
 
-@media screen and (max-width: 1200px) { /* Deals with wallpaper duplicating */
-  body {
-    background: url(https://upload.wikimedia.org/wikipedia/commons/f/fa/Playa_del_Rinc%C3%B3n_de_la_Victoria.jpg) no-repeat top center fixed;
-    }
-  }
-
+}
 @media screen and (max-width: 920px) { /* Change navbar */
   nav ul{ /* Simplest solution to avoid search-bar showing above nav list items */
       position: static;

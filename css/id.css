@@ -3,7 +3,7 @@
   bottom: 100px
 }
 
-#wrapper {
+#wrapper { /* Encapsulates all of body except <script> tags */
   width: 100%;
   min-height: 100%; /* At least wraps 100% of the screen height */
   position: relative;
@@ -15,12 +15,12 @@
     font-size: 14px;
 }
 
-#payment {
+#payment { /* Second part of form on rent.html */
   width: 960px;
   margin: 0 auto;
 }
 
-#form_container {
+#form_container { /* Encapsules Contact form  */
   width: 600px;
   margin: 0 auto;
   overflow:auto;
@@ -33,11 +33,11 @@
   float: left;
 }
 
-#message {
+#message { /* textarea in contact form */
   max-width: 570px; /* 280px * 2 + 10px */
 }
 
-#rent, #submit {
+#rent, #submit { /* Both buttons in rent form */
   width: 60px;
 }
 
@@ -46,10 +46,11 @@
   width: 280px;
 }
 
-#travelers { /* Was too short */
+#travelers { /* Amount of travelers input was too short */
   width:150px
 }
 
 #payment { /* Payment form, should be displayed when #submit is clicked */
+  padding-top: 20px;
   display: none;
 }

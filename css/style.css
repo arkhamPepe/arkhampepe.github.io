@@ -5,7 +5,7 @@
 }
 
 body {
-    background: url(https://upload.wikimedia.org/wikipedia/commons/f/fa/Playa_del_Rinc%C3%B3n_de_la_Victoria.jpg); /*Add: "no-repeat center center fixed" to make picture fixed*/
+    background: url(https://upload.wikimedia.org/wikipedia/commons/f/fa/Playa_del_Rinc%C3%B3n_de_la_Victoria.jpg) no-repeat top center fixed; /* Add: no-repeat center center fixed to make picture fixed*/
     -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
