@@ -15,7 +15,7 @@
     font-size: 14px;
 }
 
-#payment { /* Second part of form on rent.html */
+#payment, #first { /* Second part of form on rent.html */
   width: 960px;
   margin: 0 auto;
 }
@@ -23,8 +23,10 @@
 #form_container { /* Encapsules Contact form  */
   width: 600px;
   margin: 0 auto;
-  overflow:auto;
-  padding-bottom: 250px; /* Makes footer be at bottom */
+}
+
+#button {
+  height: 100%
 }
 
 #submit { /* Styles submit button in contact form */
@@ -35,6 +37,10 @@
 
 #message { /* textarea in contact form */
   max-width: 570px; /* 280px * 2 + 10px */
+}
+
+#submit_payment {
+  padding: 0 20px;
 }
 
 #rent, #submit { /* Both buttons in rent form */
@@ -51,6 +57,19 @@
 }
 
 #payment { /* Payment form, should be displayed when #submit is clicked */
+  margin-top: 20px;
   padding-top: 20px;
   display: none;
+}
+
+#first, #payment, #form_container form {
+  background: rgba(255, 255, 255, 0.5);;
+  padding: 10px;
+
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+  border-radius: 5px;
+  overflow: auto;
 }

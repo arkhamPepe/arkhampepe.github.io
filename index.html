@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Media queries cause the site to break and I have spent countless hours trying to fix it without result -->
   <meta charset="UTF-8">
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <title>Title</title>
 
   <link type="text/css" rel="stylesheet" href="css/style.css" />
   <!-- <link type="text/css" rel="stylesheet" href="css/media.css" /> -->
+
+  <!-- Created new media query css for testing without having to delete old file -->
   <link type="text/css" rel="stylesheet" href="css/mediaquery.css" />
   <link type="text/css" rel="stylesheet" href="css/carousel.css" />
   <link type="text/css" rel="stylesheet" href="css/class_general.css" />
@@ -54,7 +57,7 @@
           <div id="search-bar">
               <form>
                   <input type="text" name="search" id="search" />
-                      <input type="submit" name="submit" value="Search" id="button"/>
+                      <input type="submit" name="submit" value="🔍 Search" id="button"/>
               </form>
           </div>
       </nav>
@@ -114,22 +117,20 @@
     </div>
 
       <article> <!-- Makes paragraph positioned relative -->
-          <h2>Heading h2</h2>
+          <h2>Why choose Sol Apartments?</h2>
           <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit,
-              vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus,
-              ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique,
-              tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris
-              sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum
-              in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate
-              eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula,
-              a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at
-              ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan.
+              Here at Sol Apartments we want to offer a simple but safe way of renting and
+              making your own home rentable. Rent for just a day, an entire week or for an even longer time.
+              We let out customers be in control of what they are absolutely passionate about.
+
+
           </p>
       </article>
 
       <article>
-        <h2>Heading h2</h2>
+        <img src="img/apartment1.jpg" width="300px" alt="apartment for sale" class="right">
+
+        <h2>An offer you can't refuse!</h2>
 
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit,
@@ -210,7 +211,7 @@
   <script>
   		jQuery(document).ready(function($) {
   			$('.banner').unslider({
-          autoplay: false,
+          autoplay: true,
           infinite: true,
           slidesToShow: 3
         });

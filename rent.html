@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Media queries cause the site to break and I have spent countless hours trying to fix it without result -->
   <meta charset="UTF-8">
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <title>Title</title>
 
   <link type="text/css" rel="stylesheet" href="css/style.css" />
   <!-- <link type="text/css" rel="stylesheet" href="css/media.css" /> -->
+
+  <!-- Created new media query css for testing without having to delete old file -->
   <link type="text/css" rel="stylesheet" href="css/mediaquery.css" />
   <link type="text/css" rel="stylesheet" href="css/carousel.css" />
   <link type="text/css" rel="stylesheet" href="css/class_general.css" />
@@ -49,17 +52,17 @@
               <a>
           </ul>
           <div id="search-bar">
-              <form>
-                  <input type="text" name="search" id="search" />
-                      <input type="submit" name="submit" value="Search" id="button"/>
-              </form>
+            <form>
+                <input type="text" name="search" id="search" />
+                    <input type="submit" name="submit" value="🔍 Search" id="button"/>
+            </form>
           </div>
       </nav>
   </header>
 
   <main>
     <form>
-      <div>
+      <div id="first"> <!-- Visible part of form -->
         <div class="left">
           <label for="apartment_form">Apartment</label>
           <input type="text" name="apartment" id="apartment_form"/> <!-- Differentiate from id apartment -->
@@ -82,10 +85,14 @@
           <input type="number" name="travelers" min="1" max="5" id="travelers"/>
 
           <div class="right">
+            <!-- Shows second part of form when clicked -->
             <input type="button" name="answer" value="Continue" onclick="showDiv()" id="rent"/>
           </div>
         </div>
       </div>
+
+      <!-- Invisible until #rent is clicked -->
+      <!-- Fully aware that a payment form should be in a separate page using https -->
       <div class="clear-me" id="payment">
         <h2>Payment information</h2>
         <div class="left">
@@ -129,12 +136,13 @@
         </div>
 
         <div class="left">
+          <br> <!-- No label -->
           <input type="submit" value="Rent" id="submit_payment">
         </div>
 
-        <div>
+        <!-- <div>
           <img width="50px" src="img/Check.png" alt="checkmark">
-        </div>
+        </div> -->
 
 
       </div>
@@ -171,6 +179,7 @@
   });
   </script>
 
+  <!-- Shows suggestions when declaring the apartment that you want to rent -->
   <script>
   $(function() {
     var availableTags = [

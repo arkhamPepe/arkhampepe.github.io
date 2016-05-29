@@ -16,7 +16,13 @@ body {
 
 header{
     background-image: url(https://i.ytimg.com/vi/NruZ5vzRhQ4/maxresdefault.jpg);
-    border-bottom: black solid 3px;
+    border-bottom: black solid 1px;
+
+    /* Box shadow */
+    -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+
     height: 20%;
     width: 100%;
     padding-top: 20px;
@@ -24,6 +30,7 @@ header{
     margin-bottom: 20px;
 }
 
+/* Pictures in apartments.html, uses figure to include price and rating */
 figure {
   float: left;
   width: 300px;
@@ -41,19 +48,15 @@ nav{
 
 article{
     background: white;
-    border: 3px solid #000000;
+
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
     border-radius: 5px;
     padding: 10px;
     margin: 10px 0;
     overflow: auto;
-}
-
-form {
-  background: white;
-  padding: 10px;
-  border: 3px solid #000;
-  border-radius: 5px;
-  overflow: auto;
 }
 
 form label { /* label and input now count as one box */
