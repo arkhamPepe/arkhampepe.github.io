@@ -11,7 +11,6 @@
   article *{
       width: 90%;
       margin: 0 auto;
-      overflow: none;
   }
 
   /* Rent form */
@@ -31,7 +30,7 @@
     width: 90%;
   }
 
-  nav{
+  nav {
       /*position: relative;
       bottom: 0;
       padding-top: 0;*/
@@ -39,6 +38,7 @@
       width: 100%;
       background: rgba(0, 0, 0, 0.2);
   }
+
   #search-bar form {
     margin: 0 10px;
     float: left;
@@ -47,17 +47,16 @@
     width: 100%;
     padding: 0;
   }
-}
 
-}
 @media screen and (max-width: 920px) { /* Change navbar */
-  nav ul{ /* Simplest solution to avoid search-bar showing above nav list items */
+  /* Simplest solution to avoid search-bar showing above nav list items */
+  nav ul{
       position: static;
       text-align: left;
       margin-bottom: 10px;
   }
 
-  nav ul li{
+  nav ul li {
       padding: 30px 10px;
       height: auto;
       width: 50px;
@@ -66,8 +65,9 @@
 
   #search, #button {
     height: 30px;
-    font-size: 20px
+    font-size: 20px;
   }
+
   #search-bar form {
     padding: 3px;
   }
